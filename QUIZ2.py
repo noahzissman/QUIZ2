@@ -39,15 +39,12 @@ def main():
                 blue_led.off()
             
             time.sleep(0.1)
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
+    except KeyboardInterrupt:
+        print("Program Stopped")
+    finally:
+        red_led.off()
+        green_led.off()
+        blue_led.off()
+        
+        
+        
